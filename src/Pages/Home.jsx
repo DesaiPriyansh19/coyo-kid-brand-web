@@ -118,18 +118,18 @@ useEffect(() => {
         >
         
           <a href="#why" onClick={() => setMenuOpen(false)} className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all">
-            <span className="text-base font-medium">Why COYO Kid?</span>
-            <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+            <span className="text-xl font-medium">Why COYO Kid?</span>
+            <span className="text-2xl group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <a href="#features" onClick={() => setMenuOpen(false)} className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all">
-            <span className="text-base font-medium">Feachers & Moduals</span>
-            <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+            <span className="text-xl font-medium">Feachers & Moduals</span>
+            <span className="text-2xl group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <a href="#plans" onClick={() => setMenuOpen(false)} className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all">
-            <span className="text-base font-medium">Contact Us</span>
-            <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+            <span className="text-xl font-medium">Contact Us</span>
+            <span className="text-2xl group-hover:translate-x-1 transition-transform">→</span>
           </a>
-          <a href="tel:+919227090227" className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all font-semibold">
+          <a href="tel:+919227090227" className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all font-medium">
             <span className="flex items-center gap-2">
               <PhoneCall className="h-5 w-5 text-black animate-[wiggle_1s_infinite]" /> +91 9227 09 0227
             </span>
