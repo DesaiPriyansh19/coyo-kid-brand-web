@@ -54,7 +54,7 @@ useEffect(() => {
       {/* Overlay background blur */}
  {menuOpen && (
   <div
-    className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-40"
+    className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-50"
     onClick={() => setMenuOpen(false)}
   />
 )}
@@ -62,7 +62,7 @@ useEffect(() => {
 
 
       {/* Navbar */}
-      <nav className="w-full px-1 md:px-7 lg:px-24 flex items-center justify-between  py-3 md:py-8 relative z-50">
+      <nav className="w-full px-1 md:px-7 lg:px-20 flex items-center justify-between  py-3 md:py-8 relative z-50">
         <div className="hidden tracking-wider text-sm lg:text-xl md:flex flex-1 justify-start gap-6 ">
           <a href="#why" className="group relative font-semibold">
             Why COYO Kid?   
@@ -77,8 +77,8 @@ useEffect(() => {
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
-        <div className="flex justify-center flex-1">
-          <img src={logo2} alt="Logo" className="h-8 z-50" />
+        <div className="flex justify-center flex-1 z-0">
+          <img src={logo2} alt="Logo" className="h-8 " />
         </div>
         <div className="hidden tracking-wider text-sm lg:text-xl  md:flex flex-1 justify-end gap-6  items-center">
           <a href="#plans" className="group relative font-semibold">
@@ -111,7 +111,7 @@ useEffect(() => {
 
         {/* Sidebar */}
         <div
-          className={`fixed top-0 pt-16  right-0 h-full w-3/4 sm:w-1/2 bg-white shadow-lg flex flex-col px-6 py-6 z-50 transform transition-transform duration-500 ease-in-out space-y-5 ${
+          className={`fixed top-0 pt-16  right-0 h-full w-3/4 sm:w-1/2 bg-white shadow-lg flex flex-col px-6 py-6 z-100 transform transition-transform duration-500 ease-in-out space-y-5 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -146,7 +146,7 @@ useEffect(() => {
       {/* Hero Section */}
       <div className="flex tracking-wider flex-col lg:flex-row  mx-auto justify-center items-center gap-0  px-8 md:px-20 py-16 mb-6 lg:mb-14" >
      <div className="w-full lg:w-[60%] text-center lg:text-left mx-auto ">
-  <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-8xl font-[0.5] text-gray-700 leading-tight mx-auto">
+  <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-8xl font-[0.5] text-gray-700 leading-tight mx-auto">
     <span
       className="relative inline-block"
       data-aos="fade-left"
@@ -194,7 +194,7 @@ useEffect(() => {
           <img src={img2} alt="Boy" className="w-full" />
         </div>
         <div className="w-full lg:w-[60%] md:pr-28 ">
-          <h2 className="text-7xl font-bold tracking-wide mb-2">Why COYO Kid?</h2>
+          <h2 className="text-5xl sm:text-7xl font-bold tracking-wide mb-2">Why COYO Kid?</h2>
           <p className="text-xl font-semibold mb-2">COYO Kid has been developed by a highly experienced team of industry professionals with deep expertise in the education sector. Our system is designed to address practical challenges commonly encountered in daily academic and administrative workflows</p>
           <p className="text-xl font-semibold mb-2">Through extensive engagement with various educational institutions and detailed discussions regarding their operational routines and digital transformation needs, we gained valuable insights into the sector's requirements.</p>
           <p className="text-xl font-semibold">Based on comprehensive analysis of the collected data and thorough observation of institutional processes, COYO Kid has been thoughtfully engineered to deliver a reliable, efficient, and user-centric digital solution for modern educational management.</p>
@@ -249,7 +249,7 @@ useEffect(() => {
   data-aos="fade-up"
 >
   {/* Heading for small screens */}
-    <h3 className="flex sm:hidden text-6xl font-semibold mb-4 text-center">
+    <h3 className="flex sm:hidden text-5xl font-semibold mb-4 text-center">
       Let Us Connect You
     </h3> {/* Left Side – Image */}
   <div className="w-[85%] mx-auto lg:w-1/2 flex justify-center items-center">
