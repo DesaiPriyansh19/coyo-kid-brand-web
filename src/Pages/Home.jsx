@@ -60,7 +60,8 @@ useEffect(() => {
 )}
 
 
-
+{/* Fixed Navbar + Divider Wrapper */}
+<div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       {/* Navbar */}
       <nav className="w-full px-1 md:px-7 lg:px-20 flex items-center justify-between  py-3 md:py-8 relative z-50">
         <div className="hidden tracking-wider text-sm lg:text-xl md:flex flex-1 justify-start gap-6 ">
@@ -82,7 +83,7 @@ useEffect(() => {
         </div>
         <div className="hidden tracking-wider text-sm lg:text-xl  md:flex flex-1 justify-end gap-6  items-center">
           <a href="#plans" className="group relative font-semibold">
-            Plans
+          Contact Us
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
           </a>
               <a href="#features" className="group relative font-semibold">
@@ -125,7 +126,7 @@ useEffect(() => {
             <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <a href="#plans" onClick={() => setMenuOpen(false)} className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all">
-            <span className="text-base font-medium">Plans</span>
+            <span className="text-base font-medium">Contact Us</span>
             <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <a href="tel:+919227090227" className="flex items-center justify-between group py-2 px-3 border rounded hover:bg-gray-100 transition-all font-semibold">
@@ -143,8 +144,9 @@ useEffect(() => {
         <div className="w-[25%] bg-pink-400"></div>
         <div className="w-[26%] bg-green-500"></div>
       </div>
+      </div>
       {/* Hero Section */}
-      <div className="flex tracking-wider flex-col lg:flex-row  mx-auto justify-center items-center gap-0  px-8 md:px-20 py-16 mb-6 lg:mb-14" >
+      <div className="flex mt-9 lg:mt-24 tracking-wider flex-col lg:flex-row  mx-auto justify-center items-center gap-0  px-8 md:px-20 py-16 mb-6 lg:mb-14" >
      <div className="w-full lg:w-[60%] text-center lg:text-left mx-auto ">
   <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-8xl font-[0.5] text-gray-700 leading-tight mx-auto">
     <span
